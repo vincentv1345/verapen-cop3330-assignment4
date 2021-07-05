@@ -70,6 +70,6 @@ class itemCompletion extends displayInformation{
         //the item contains nothing in it's description
         //the boolean value will also return false if no
         //value is entered for the date
-        return true;//false for now
+        return true;//true for now
     }
 }
