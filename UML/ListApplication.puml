@@ -39,11 +39,15 @@ boolean containsItems()
 int getCapacity()
 void setCapacity()
 }
+class editItemController{
+String []itemArray
+void saveArray()
+}
 class title{
 String title
 String setListTitle
 String getTitle
-String setTitle()
+String setTitle(title)
 void getTitle(title)
 }
 class Date{
@@ -73,7 +77,7 @@ String editTitle()
 void addItemToList(newItem)
 void editDescription(item)
 }
-class displayList{
+class displayInformation{
 String List
 String[] items()
 String incompleteItem
@@ -108,7 +112,8 @@ item <|-- itemNumber
 item <-- itemDescription
 todoListsController <|-- todoListDataBase
 todoListDataBase <|-- editTodoList
-todoListDataBase <|-- displayList
-displayList <|-- itemCompletion
+todoListDataBase <|-- displayInformation
+displayInformation <|-- itemCompletion
 todoListDataBase <|-- saveStorage
+todoListsController <|-- editItemController
 @enduml

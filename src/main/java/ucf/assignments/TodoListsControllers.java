@@ -3,7 +3,39 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-public class TodoListsControllers {
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+
+    public class TodoListsControllers {
+
+        @FXML
+        private ListView<?> ListArray;
+
+        @FXML
+        private TextField listTitle;
+
+        @FXML
+        private Button removeList;
+
+        @FXML
+        private Button removeItem;
+
+        @FXML
+        private ListView<?> itemArray;
+
+        @FXML
+        private Button addList;
+
+        @FXML
+        private Button addItem;
+
+        @FXML
+        private Button EditList;
+
+        @FXML
+        private Button editItem;
     //@FXML
     //initialize controller String array listOfLists
     //@FXML
@@ -29,6 +61,25 @@ public class TodoListsControllers {
         //initializes itemList[]
         //gets number of TodoLists and puts in lists
         //boolean
+    }
+    class saveStorage{
+        public void save(String list[],String items[]){
+            //get list
+            //for i equals zero i is less than items length getItems from list
+            //save(list[i].getItems[i]) to storage
+        }
+        public void saveALl(String list[], String items[]){
+            //for i equals zero i is less than list length then add i by one
+            // save(list[i])
+            //for j equals zero then j is less than item length then add j by one
+            //save(list[i].getItems[j])
+        }
+        public void checkLoadToDoList(){
+
+        }
+        public void load(){
+            //
+        }
     }
     class editTodoList{
         public String editDueDate(String date){
@@ -57,14 +108,28 @@ public class TodoListsControllers {
     }
 }
 class displayInformation{
-    public void displayList(String listContents){
+    public void displayList(String []listContents){
         //makes loop to read in todoList array contents
-        //calls print function in order to print the todoList contents
-        //for each list
+        //while i less than list contents length
+        //print listcontents[i]
+    }
+    public String printIncomplete(String listItems[]){
+        //for i less than listItems length
+        //if checkItemCompleted(listItem[i]) false
+        //prints listItem[i] i plus 1
+        //else i plus 1
+        return "";//nothing for now
+    }
+    public String printCompleteItems(String listItemsp[]){
+        //for i less than listItems length
+        //if checkItemCompleted(listItem[i]) true
+        //prints listItem[i] i plus 1
+        //else i plus 1
+        return "";
     }
 }
-class itemCompletion extends displayInformation{
-    public boolean checkCompletion(){
+class itemCompletion extends displayInformation {
+    public boolean checkCompletion() {
         //checks if item is complete
         //a boolean value will return false if
         //the item contains nothing in it's description
@@ -73,3 +138,4 @@ class itemCompletion extends displayInformation{
         return true;//true for now
     }
 }
+

@@ -1,10 +1,24 @@
 package ucf.assignments;
 import javafx.fxml.FXML;
-import javafx.scene.control.TableView;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
-public class editItemController extends TodoLists{
-    //@FXML initialize dueDateArray
-    // initialize descriptionArray
-    // initialize completion array
+import javafx.scene.control.TableView;
+
+public class editItemController {
+
+    @FXML
+    private TableView<?> itemInfo;
+
+    @FXML
+    private TableColumn<?, ?> itemDueDate;
+
+    @FXML
+    private TableColumn<?, ?> itemDescription;
+
+    @FXML
+    private TableColumn<?, ?> completionStatus;
+
+    @FXML
+    private Button backButton;
 
 }

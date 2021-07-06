@@ -4,13 +4,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TableColumn;
 
 public class TodoLists extends Application{
+    @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("todoListsController.fxml"));
-        primaryStage.setScene(new Scene(root, 300,275));
+        Parent root = FXMLLoader.load(getClass().getResource("TodoListsController.fxml"));
+        primaryStage.setScene(new Scene(root, 400,600));
         primaryStage.show();
     }
     public static void main(String[] args){ launch(args); }
