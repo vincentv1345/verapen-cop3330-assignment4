@@ -7,7 +7,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Vincent Verapen
+ */
 public class TodoLists extends Application{
     @Override
     public void start(Stage primaryStage) throws IOException {
