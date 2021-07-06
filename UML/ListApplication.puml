@@ -34,8 +34,8 @@ boolean itemStatus
 checkItemStatus()
 }
 class capacity{
-int NumItems
-containsItems()
+int numLists
+boolean containsItems()
 int getCapacity()
 void setCapacity()
 }
