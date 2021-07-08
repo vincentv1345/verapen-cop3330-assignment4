@@ -1,10 +1,19 @@
 package ucf.assignments;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 /*
@@ -12,11 +21,22 @@ import javafx.scene.control.TableColumn;
  *  Copyright 2021 Vincent Verapen
  */
 public class TodoLists extends Application{
+    static AnchorPane root;
+
+    static List<ListView> list = new ArrayList<>(List.of());
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
+        try{
         Parent root = FXMLLoader.load(getClass().getResource("TodoListsController.fxml"));
+
+
         primaryStage.setScene(new Scene(root, 400,600));
         primaryStage.show();
+    }
+    catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
     public static void main(String[] args){ launch(args); }
     class todoListMaker{

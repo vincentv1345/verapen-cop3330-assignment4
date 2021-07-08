@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.TodoListsControllers">
    <children>
       <ListView fx:id="ListArray" layoutX="22.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" />
       <TextField fx:id="listTitle" layoutX="42.0" layoutY="246.0" />
-      <Button fx:id="removeList" layoutX="171.0" layoutY="298.0" mnemonicParsing="false" text="Remove" />
-      <Button fx:id="removeItem" layoutX="500.0" layoutY="298.0" mnemonicParsing="false" text="Remove" />
-      <ListView fx:id="itemArray" layoutX="362.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="removeList" layoutX="160.0" layoutY="298.0" mnemonicParsing="false" text="Remove" />
+      <Button fx:id="removeItem" layoutX="538.0" layoutY="298.0" mnemonicParsing="false" text="Remove" />
+      <ListView fx:id="itemArray" layoutX="400.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" />
       <Button fx:id="addList" layoutX="30.0" layoutY="298.0" mnemonicParsing="false" text="Add" />
-      <Button fx:id="addItem" layoutX="386.0" layoutY="298.0" mnemonicParsing="false" text="Add" />
-      <TextField layoutX="386.0" layoutY="246.0" />
+      <Button fx:id="addItem" layoutX="410.0" layoutY="298.0" mnemonicParsing="false" text="Add" />
+      <TextField layoutX="420.0" layoutY="246.0" />
       <Text layoutX="110.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lists" />
-      <Text layoutX="450.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" />
-      <Button fx:id="EditList" layoutX="83.0" layoutY="298.0" mnemonicParsing="false" text="Edit" />
-      <Button fx:id="editItem" layoutX="435.0" layoutY="299.0" mnemonicParsing="false" text="Edit" />
+      <Text layoutX="489.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" />
+      <Button fx:id="EditList" layoutX="91.0" layoutY="298.0" mnemonicParsing="false" text="Edit" />
+      <Button fx:id="editItem" layoutX="481.0" layoutY="298.0" mnemonicParsing="false" text="Edit" />
    </children>
 </AnchorPane>
